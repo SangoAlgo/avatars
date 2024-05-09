@@ -3,9 +3,10 @@
 <html>
 <head>
   <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style/style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <script src="playerjs.js" type="text/javascript"></script>
 </head>
 <body>
   <div id="anime-zone">
@@ -39,11 +40,57 @@
     </div>
   </div>
   
-  <div id="description">
-    <p>Описание</p>
-  </div>
-  
   <main>
+  <div id="two-table-zone">
+    <table id="table-two">
+        <tr class="black-tr">
+            <td>Год выхода:</td>
+            <td>2012</td>
+        </tr>
+        <tr>
+            <td>Время</td>
+            <td>23 мин.</td>
+        </tr>
+      
+        <tr class="black-tr">
+            <td>Год выхода:</td>
+            <td>2012</td>
+        </tr>
+        <tr>
+            <td>Время</td>
+            <td>23 мин.</td>
+        </tr>
+      
+        <tr class="black-tr">
+            <td>Режисер: </td>
+            <td>Харую Сотудзаки</td>
+        </tr>
+        <tr>
+            <td>Просмотров:</td>
+            <td>
+              361833
+            </td>
+        </tr>
+         <tr class="black-tr">
+            <td>Жанры: </td>
+            <td>
+              <a class="ganr">Экшен</a>
+              •
+              <a class="ganr">Приключение</a>
+              •
+              <a class="ganr">Экшен</a>
+              •
+              <a class="ganr">Фентзеи</a>
+            </td>
+        </tr>
+    </table>
+  </div>
+    
+    <p id="anime-name-text">Описание <span style="color:#61418C">мультсериала</span></p>
+    <p style="font-family: 'Roboto', sans-serif; font-size: 17px; color: #C8C8C8; font-weight: 300; margin-top: -6px;">Недавно безответственному отаку исполнилось тридцать четыре года. В столь зрелый возраст работник обычной фирмы ничего толком не добился, а потому живёт за счёт родителей. В жизни бездельника наступили смутные времена, ведь неожиданно погибли родители, но впереди мужчину ожидало неприятное событие. На работе безответственного клерка уволило начальство. Бедолага отправился домой, но по пути он стал жертвой грузовика. Казалось бы, что на этом история закончилась, но высшие силы даровали мужчине второй шанс в параллельном мире. В теле юного волшебника оказался заядлый отаку, у которого есть не только семья, но и верные друзья. В мире, где живёт Рудеус Грейрат, существуют не только рыцарские турниры, но и магические создания. Мужчина решил, что не упустит шанс начать жизнь с нуля, а потому он отправился вместе с друзьями в школу волшебства. Вскоре талантливый юноша стал сильней и его заприметила демонесса Рокси, которая решила взять мальчишку в ученики. Рудеус был рад знакомству с могущественным учителем, ведь впереди мальчишку ждёт поступление в элитную академию магии.
+
+Нелёгкий путь выбрал мужчина из другого измерения. Впереди Грейрата ждут поединки и опасные приключения, о которых можно узнать, если смотреть аниме "Mushoku Tensei: Isekai Ittara Honki Dasu". Во время странствий Рудеус познакомится не только с новыми друзьями, но и повстречает сильных врагов.</p>
+    
     <p id="anime-name-text">Персонажи</p>
     <div id="characters-zone">
       <div class="one-character">
@@ -52,8 +99,25 @@
       <div class="one-character">
         <img src="https://avatars.mds.yandex.net/get-shedevrum/11079990/8032f6c2d61d11eeaba7faa0c08f8d07/orig">
       </div>
+      <div class="one-character">
+        <img src="https://i.pinimg.com/736x/c0/7b/0a/c07b0a5c0e67390b4590ea55fc13b621.jpg">
+      </div>
+      <div class="one-character">
+        <img src="https://avatars.mds.yandex.net/get-shedevrum/11079990/8032f6c2d61d11eeaba7faa0c08f8d07/orig">
+      </div>
+      <div class="one-character">
+        <img src="https://i.pinimg.com/736x/c0/7b/0a/c07b0a5c0e67390b4590ea55fc13b621.jpg">
+      </div>
+      <div class="one-character">
+        <img src="https://avatars.mds.yandex.net/get-shedevrum/11079990/8032f6c2d61d11eeaba7faa0c08f8d07/orig">
+      </div>
       
     </div>
+    <div id="view-txt"><p id="anime-name-text">Смотреть аниме сериал Клинок, рассекающий демонов онлайн на русском</p></div>
+    <div id="player"></div>
+    <script>
+        var player = new Playerjs({id:"player", file:"https://r440202.kujo-jotaro.com/mushoku-tensei/1.480.12dcfb23191051cf.mp4?hash=8f954f3040f00bb3731e3104c6b11627&hash2=31b8b8a82583555165abdd577a9745d9", poster:"image/poster.png"});
+    </script>
   </main>
   
   <!-- Подключение telegram.api -->
