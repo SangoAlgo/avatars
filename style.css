@@ -5,6 +5,14 @@ html, body {
   background-color: #1E1E1E;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+
+@font-face {
+  font-family: 'monserrat';
+  src: url("ofont.ru_Montserrat.ttf");
+}
+
 #anime-zone {
   position: relative;
   display: flex;
@@ -45,8 +53,8 @@ main {
   color: rgba(255, 255, 255, 0.8);
   word-break: break-word;
   overflow: auto;
-  font-weight: bold;
   font-size: 20px;
+  font-family: monserrat;
 }
 
 #name-and-table {
@@ -57,9 +65,10 @@ main {
   color: rgba(255, 255, 255, 0.7);
 }
 
+
+
 #buttons-zone {
   height: 43%;
-  margin-top: 0px;
 }
 
 .with-bg-btn {
@@ -98,7 +107,7 @@ main {
   width: 100%;
   padding: 0.1px;
   overflow: hidden;
-  margin-top: 10px;
+  margin-top: 0px;
   height: 50px;
   transition: height 0.5s ease;
   
@@ -123,6 +132,9 @@ main {
   word-break: break-word;
   overflow: hidden;
   margin-top: -5px;
+  flex-wrap: wrap;
+  row-gap: 20px;
+  column-gap: 0px;
 }
 
 .one-character {
@@ -142,4 +154,46 @@ main {
 table {
   border-collapse: collapse;
   width: 100%;
+}
+
+#two-table-zone {
+  margin-top: 20px;
+}
+
+#table-two {
+  width: 100%;
+}
+
+#table-two td {
+  color: #999999;
+  
+  padding: 10px;
+  
+}
+
+.one-tr {
+  width: 100%;
+}
+
+.black-tr {
+  background-color: #141414;
+  width: 100%;
+}
+
+.ganr {
+  color: #61418C;
+  text-decoration: none;
+}
+
+#player {
+  margin: 7px;
+  margin-top: 10px;
+  width: 95%;
+  height: 200px;
+  background-color: gray;
+}
+
+#view-txt {
+  margin-top: 20px;
+  text-align: center;
 }
